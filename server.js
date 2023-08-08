@@ -15,3 +15,30 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 //creates helpers
 const hbs = exphbs.create({ helpers });
+
+//establishes session object storage and cookies and connects to SequalizeStore
+const sess = {
+    secret: 'secret',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+      db: sequelize
+    })
+  };
+
+//sets up express-session
+app.use(session(sess));
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(routes);
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
+});
