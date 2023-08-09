@@ -14,14 +14,12 @@
     <nav>
       <button class="btn" id="logout">logout</button>
     </nav>
-    {{/if}}
-  </header>
-    {{#unless logged_in}}
+    {{#else}}
     <nav>
         <button class="btn" id="login">login</button>
         <button class="btn" id="newUser">login</button>
     </nav>
-    {{/unless}}
+    {{/if}}
    <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
