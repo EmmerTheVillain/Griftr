@@ -8,7 +8,7 @@
 <body>
     <header class="display-flex justify-space-between align-center p-2">
     <h1>
-      User Registry
+      Griftr
     </h1>
     {{#if logged_in}}
     <nav>
@@ -16,6 +16,12 @@
     </nav>
     {{/if}}
   </header>
+    {{#unless logged_in}}
+    <nav>
+        <button class="btn" id="login">login</button>
+        <button class="btn" id="newUser">login</button>
+    </nav>
+    {{/unless}}
    <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
