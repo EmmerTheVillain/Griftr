@@ -34,4 +34,16 @@ router.get('/login', (req, res) => {
   });
 });
 
+router.get('/newUser', (req, res) => {
+  // If a session exists, redirect the request to the homepage
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('newUser', {
+    // Pass any necessary data to the login template
+  });
+});
+
 module.exports = router;
