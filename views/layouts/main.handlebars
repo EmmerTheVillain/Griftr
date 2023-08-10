@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      Griftr
+    </h1>
+    <div class = "col-lg-6 col-md-9 col-sm-11">
+    {{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{#else}}
+    <nav>
+        <button class="btn" id="login">login</button>
+        <button class="btn" id="newUser">login</button>
+    </nav>
+    </div>
+    {{/if}}
+   <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  <footer>
+      
+  </footer>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+</html>
