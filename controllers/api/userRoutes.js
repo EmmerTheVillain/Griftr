@@ -54,9 +54,52 @@ router.post('/create', async (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,
+        first: req.body.first,
+        last: req.body.last,
+        user_type: req.body.user_type,
+        bio: req.body.bio,
+        avatar: req.body.avatar
       });
   
       res.status(201).json(newUser);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
+  // Route to get user info for Matchmaking
+router.get('/:id', async (req, res) => {
+    try {
+      const user = await User.findByPk(req.params.id, {
+        attributes: ['first', 'last', 'username', 'bio', 'avatar'],
+      });
+  
+      if (!user) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
+  
+      res.status(200).json(user);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+  // Route to delete a user by ID
+router.delete('/:id', async (req, res) => {
+    try {
+      const deletedUser = await User.destroy({
+        where: {
+          id: req.params.id,
+        },
+      });
+  
+      if (!deletedUser) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
+  
+      res.status(200).json({ message: 'User deleted successfully' });
     } catch (err) {
       res.status(500).json(err);
     }
