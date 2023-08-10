@@ -54,6 +54,11 @@ router.post('/create', async (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,
+        first: req.body.first,
+        last: req.body.last,
+        user_type: req.body.user_type,
+        bio: req.body.bio,
+        avatar: req.body.avatar
       });
   
       res.status(201).json(newUser);
