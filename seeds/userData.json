@@ -3,7 +3,7 @@
       "first": "John",
       "last": "Doe",
       "user_type": "regular",
-      "bio": "I'm a regular user",
+      "bio": "I'm a software developer.",
       "email": "john@example.com",
       "avatar": "avatar1.jpg",
       "username": "johndoe",
@@ -13,7 +13,7 @@
       "first": "Jane",
       "last": "Smith",
       "user_type": "admin",
-      "bio": "I'm an admin user",
+      "bio": "I love hiking and photography.",
       "email": "jane@example.com",
       "avatar": "avatar2.jpg",
       "username": "janesmith",
@@ -23,11 +23,80 @@
       "first": "Alice",
       "last": "Johnson",
       "user_type": "regular",
-      "bio": "I'm another regular user",
+      "bio": "Book lover and tea enthusiast.",
       "email": "alice@example.com",
       "avatar": "avatar3.jpg",
       "username": "alicej",
       "password": "mypassword789"
+    },
+    {
+      "first": "Michael",
+      "last": "Brown",
+      "user_type": "regular",
+      "bio": "Musician and aspiring artist.",
+      "email": "michael@example.com",
+      "avatar": "avatar4.jpg",
+      "username": "michaelb",
+      "password": "musiclover456"
+    },
+    {
+      "first": "Emily",
+      "last": "Taylor",
+      "user_type": "regular",
+      "bio": "Nature lover and traveler.",
+      "email": "emily@example.com",
+      "avatar": "avatar5.jpg",
+      "username": "emilyt",
+      "password": "explorer789"
+    },
+    {
+      "first": "David",
+      "last": "Williams",
+      "user_type": "regular",
+      "bio": "Tech geek and gadget enthusiast.",
+      "email": "david@example.com",
+      "avatar": "avatar6.jpg",
+      "username": "davidw",
+      "password": "tech1234"
+    },
+    {
+      "first": "Olivia",
+      "last": "Johnson",
+      "user_type": "regular",
+      "bio": "Animal lover and volunteer.",
+      "email": "olivia@example.com",
+      "avatar": "avatar7.jpg",
+      "username": "oliviaj",
+      "password": "animallover567"
+    },
+    {
+      "first": "William",
+      "last": "Smith",
+      "user_type": "admin",
+      "bio": "Foodie and cooking enthusiast.",
+      "email": "william@example.com",
+      "avatar": "avatar8.jpg",
+      "username": "williams",
+      "password": "foodlover890"
+    },
+    {
+      "first": "Sophia",
+      "last": "Martinez",
+      "user_type": "regular",
+      "bio": "Artist and creative thinker.",
+      "email": "sophia@example.com",
+      "avatar": "avatar9.jpg",
+      "username": "sophiam",
+      "password": "creative12345"
+    },
+    {
+      "first": "Ethan",
+      "last": "Johnson",
+      "user_type": "regular",
+      "bio": "Sports fan and outdoor enthusiast.",
+      "email": "ethan@example.com",
+      "avatar": "avatar10.jpg",
+      "username": "ethanj",
+      "password": "sportsfan678"
     }
-  ]
-  
+]
