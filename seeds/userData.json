@@ -1,0 +1,32 @@
+[
+    {
+      "first": "John",
+      "last": "Doe",
+      "user_type": "regular",
+      "bio": "I'm a software developer.",
+      "email": "john@example.com",
+      "avatar": "avatar1.jpg",
+      "username": "johndoe",
+      "password": "password123"
+    },
+    {
+      "first": "Jane",
+      "last": "Smith",
+      "user_type": "admin",
+      "bio": "I love hiking and photography.",
+      "email": "jane@example.com",
+      "avatar": "avatar2.jpg",
+      "username": "janesmith",
+      "password": "securepass456"
+    },
+    {
+      "first": "Alice",
+      "last": "Johnson",
+      "user_type": "regular",
+      "bio": "Book lover and tea enthusiast.",
+      "email": "alice@example.com",
+      "avatar": "avatar3.jpg",
+      "username": "alicej",
+      "password": "mypassword789"
+    }
+  ]

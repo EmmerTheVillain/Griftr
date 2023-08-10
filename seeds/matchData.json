@@ -1,0 +1,14 @@
+[
+    {
+      "sender_id": 1,
+      "reciever_id": 2
+    },
+    {
+      "sender_id": 2,
+      "reciever_id": 3
+    },
+    {
+      "sender_id": 3,
+      "reciever_id": 1
+    }
+  ]
