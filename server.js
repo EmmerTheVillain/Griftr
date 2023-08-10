@@ -33,8 +33,8 @@ const sess = {
 app.use(session(sess));
 
 // app.engine('handlebars', expbs({defaultLayout: 'main', layoutsDir: 'views/layouts'}));
-// // app.engine('handlebars', hbs.engine);
-// app.set('view engine', 'handlebars');
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
