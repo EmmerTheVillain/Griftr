@@ -47,4 +47,19 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// Route to create a new user
+router.post('/create', async (req, res) => {
+    try {
+      const newUser = await User.create({
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password,
+      });
+  
+      res.status(201).json(newUser);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
 module.exports = router;

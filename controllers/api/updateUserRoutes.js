@@ -101,4 +101,80 @@ router.put('/:id/bio', async (req, res) => {
     }
   });
 
+
+//   Update Username
+router.put('/:id/username', async (req, res) => {
+    try {
+      const updatedUser = await User.update(
+        {
+          username: req.body.username,
+        },
+        {
+          where: {
+            id: req.params.id,
+          },
+        }
+      );
+  
+      if (!updatedUser[0]) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
+  
+      res.status(200).json({ message: 'Username updated successfully' });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
+//   Update Password
+router.put('/:id/password', async (req, res) => {
+    try {
+      const updatedUser = await User.update(
+        {
+          password: req.body.password,
+        },
+        {
+          where: {
+            id: req.params.id,
+          },
+        }
+      );
+  
+      if (!updatedUser[0]) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
+  
+      res.status(200).json({ message: 'Password updated successfully' });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
+// Update User type
+router.put('/:id/user_type', async (req, res) => {
+    try {
+      const updatedUser = await User.update(
+        {
+          user_type: req.body.user_type,
+        },
+        {
+          where: {
+            id: req.params.id,
+          },
+        }
+      );
+  
+      if (!updatedUser[0]) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
+  
+      res.status(200).json({ message: 'User type updated successfully' });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 module.exports = router;
