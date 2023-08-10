@@ -1,0 +1,33 @@
+[
+    {
+      "first": "John",
+      "last": "Doe",
+      "user_type": "regular",
+      "bio": "I'm a regular user",
+      "email": "john@example.com",
+      "avatar": "avatar1.jpg",
+      "username": "johndoe",
+      "password": "password123"
+    },
+    {
+      "first": "Jane",
+      "last": "Smith",
+      "user_type": "admin",
+      "bio": "I'm an admin user",
+      "email": "jane@example.com",
+      "avatar": "avatar2.jpg",
+      "username": "janesmith",
+      "password": "securepass456"
+    },
+    {
+      "first": "Alice",
+      "last": "Johnson",
+      "user_type": "regular",
+      "bio": "I'm another regular user",
+      "email": "alice@example.com",
+      "avatar": "avatar3.jpg",
+      "username": "alicej",
+      "password": "mypassword789"
+    }
+  ]
+  
