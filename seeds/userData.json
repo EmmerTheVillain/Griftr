@@ -1,102 +1,103 @@
 [
     {
-      "first": "John",
-      "last": "Doe",
+      "first": "Bitconnect",
+      "last": "Bitconnect",
       "user_type": "regular",
-      "bio": "I'm a software developer.",
-      "email": "john@example.com",
+      "bio": "Promising astronomical returns through lending and trading, I'm the master of disappearing acts. I'll inflate hopes and vanish with your funds faster than you can say 'Ponzi.' Invest now for a guaranteed trip to financial ruin. 🚀📉",
+      "email": "bitconnect@example.com",
       "avatar": "avatar1.jpg",
-      "username": "johndoe",
-      "password": "password123"
+      "username": "bitconnect",
+      "password": "ponzischeme123"
     },
     {
-      "first": "Jane",
-      "last": "Smith",
+      "first": "OneCoin",
+      "last": "OneCoin",
       "user_type": "admin",
-      "bio": "I love hiking and photography.",
-      "email": "jane@example.com",
+      "bio": "Embracing innovation, I redefine 'cryptocurrency' with an air of mystery. My legendary founder and I offer education in imaginary blockchain, combining revolutionary nonsense with a dash of jail time. Invest and enjoy the pyramid ascent! 🏆🔼",
+      "email": "onecoin@example.com",
       "avatar": "avatar2.jpg",
-      "username": "janesmith",
-      "password": "securepass456"
+      "username": "onecoin",
+      "password": "pyramidscheme456"
     },
     {
-      "first": "Alice",
-      "last": "Johnson",
+      "first": "PlusToken",
+      "last": "PlusToken",
       "user_type": "regular",
-      "bio": "Book lover and tea enthusiast.",
-      "email": "alice@example.com",
+      "bio": "Master of vanishing acts and eluding authorities, I brought the art of 'exit scam' to new heights. My secret? Encourage millions to trust, invest, and watch as I disappear into thin air, leaving bags full of disappointment. 💨💼",
+      "email": "plustoken@example.com",
       "avatar": "avatar3.jpg",
-      "username": "alicej",
-      "password": "mypassword789"
+      "username": "plustoken",
+      "password": "exitguru789"
     },
     {
-      "first": "Michael",
-      "last": "Brown",
+      "first": "QuadrigaCX",
+      "last": "QuadrigaCX",
       "user_type": "regular",
-      "bio": "Musician and aspiring artist.",
-      "email": "michael@example.com",
+      "bio": "As the 'Canadian Crypto Collapse,' I excelled in mishandling funds and staged the perfect exit strategy. You'll remember me for my creative storylines and vanishing acts. Deposit your trust, and watch it vanish faster than you can say 'audit.' 🍁📉",
+      "email": "quadrigacx@example.com",
       "avatar": "avatar4.jpg",
-      "username": "michaelb",
-      "password": "musiclover456"
+      "username": "quadrigacx",
+      "password": "vanishedfunds123"
     },
     {
-      "first": "Emily",
-      "last": "Taylor",
+      "first": "MMM Global",
+      "last": "MMM Global",
       "user_type": "regular",
-      "bio": "Nature lover and traveler.",
-      "email": "emily@example.com",
+      "bio": "As the 'Mighty Money Mirage,' I mastered the art of promising heavenly returns. I'm the magician who makes your funds disappear and reappear in my pocket. Join my mystical journey and watch your money vanish in style. ✨🔮",
+      "email": "mmmglobal@example.com",
       "avatar": "avatar5.jpg",
-      "username": "emilyt",
-      "password": "explorer789"
+      "username": "mmmglobal",
+      "password": "mirage123"
     },
     {
-      "first": "David",
-      "last": "Williams",
+      "first": "GemCoin",
+      "last": "GemCoin",
       "user_type": "regular",
-      "bio": "Tech geek and gadget enthusiast.",
-      "email": "david@example.com",
+      "bio": "With promises shinier than gemstones, I'm the gem of deception. Invest in my world of fantasy and illusion, where sparkling returns turn into dust. Unearth the true meaning of disappointment with every worthless 'gem' you buy. 💎💸",
+      "email": "gemcoin@example.com",
       "avatar": "avatar6.jpg",
-      "username": "davidw",
-      "password": "tech1234"
+      "username": "gemcoin",
+      "password": "fakegems456"
     },
     {
-      "first": "Olivia",
-      "last": "Johnson",
+      "first": "Prodeum",
+      "last": "Prodeum",
       "user_type": "regular",
-      "bio": "Animal lover and volunteer.",
-      "email": "olivia@example.com",
+      "bio": "A grand production of emptiness, I'm the champion of disappearing acts. I had a vision: to spell out 'penis' and vanish, leaving nothing but laughs and lessons in gullibility. Join my brief, yet unforgettable, crypto journey. 🍆💨",
+      "email": "prodeum@example.com",
       "avatar": "avatar7.jpg",
-      "username": "oliviaj",
-      "password": "animallover567"
+      "username": "prodeum",
+      "password": "vanishedvision789"
     },
     {
-      "first": "William",
-      "last": "Smith",
+      "first": "LoopX",
+      "last": "LoopX",
       "user_type": "admin",
-      "bio": "Foodie and cooking enthusiast.",
-      "email": "william@example.com",
+      "bio": "Master of looping and deceiving, I hypnotized investors with promises of automated trading. Like a broken record, I played the same tune: invest and watch your funds loop away into thin air. Join the loop and lose. 🔄📉",
+      "email": "loopx@example.com",
       "avatar": "avatar8.jpg",
-      "username": "williams",
-      "password": "foodlover890"
+      "username": "loopx",
+      "password": "hypnoticloop890"
     },
     {
-      "first": "Sophia",
-      "last": "Martinez",
+      "first": "Benebit",
+      "last": "Benebit",
       "user_type": "regular",
-      "bio": "Artist and creative thinker.",
-      "email": "sophia@example.com",
+      "bio": "I promised the moon and stars in a sky of deception. My genius move? Disappearing after a grand ICO spectacle. Join the 'Benebit Boom' and witness a disappearing act so astonishing, it left investors applauding for more. 🌙👏",
+      "email": "benebit@example.com",
       "avatar": "avatar9.jpg",
-      "username": "sophiam",
-      "password": "creative12345"
+      "username": "benebit",
+      "password": "vanishedico12345"
     },
     {
-      "first": "Ethan",
-      "last": "Johnson",
+      "first": "Centra Tech",
+      "last": "Centra Tech",
       "user_type": "regular",
-      "bio": "Sports fan and outdoor enthusiast.",
-      "email": "ethan@example.com",
+      "bio": "Presenting the 'Centra Circus,' where we juggled promises of crypto fame with fancy debit cards. Our greatest trick? Vanishing with funds and leaving a trail of legal troubles. Invest in the illusion and watch your dreams vanish. 🎪🃏",
+      "email": "centratech@example.com",
       "avatar": "avatar10.jpg",
-      "username": "ethanj",
-      "password": "sportsfan678"
+      "username": "centratech",
+      "password": "illusionists567"
     }
+
 ]
