@@ -1,14 +1,18 @@
 <h1>Matches</h1>
-{{!-- {{ user.first }} --}}
+
 <div class="row align-center mb-5">
    <div class="col-md-3">
-    {{!-- <img src="{{user.avatar}}" alt="user avatar"> --}}
+    <img src="{{user.avatar}}" alt="user avatar">
   </div>
   <div class="col-md-9">
     <h2>{{user.first}}</h2>
   </div>
   <div class="col-md-9">
     <p>{{user.bio}}</p>
+  </div>
+  <div>
+    <button type="button" class="m-2" id="like">Like</button>
+    <button type="button" class="m-2" id="dislike">Dislike</button>
   </div>
 </div>
 
