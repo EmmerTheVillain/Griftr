@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="container display-flex justify-center align-space-between">
-     <h1 class="col-lg-6 col-md-9">
-      Griftr
-    </h1>
+  <header class="container display-flex align-space-between">
+    <div class="row jsutify-content-end">
+      <h1 class="col-4">
+        Griftr
+      </h1>
    
     {{#if logged_in}}
-    <nav class = "col-3 align-right">
+    <nav class = "col-4 offset-4">
       <button class="btn" id="logout">logout</button>
     </nav>
+    </div>
     {{!-- {{#else}}
     <nav>
         <button class="btn" id="login">login</button>
