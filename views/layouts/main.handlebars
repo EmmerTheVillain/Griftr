@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="display-flex justify-space-between align-center p-2">
-    <h1>
+    <header class="container display-flex justify-center align-space-between">
+     <h1 class="col-lg-6 col-md-9">
       Griftr
     </h1>
-    <div class = "col-lg-6 col-md-9 col-sm-11">
+   
     {{#if logged_in}}
-    <nav>
+    <nav class = "col-3 align-right">
       <button class="btn" id="logout">logout</button>
     </nav>
     {{!-- {{#else}}
@@ -21,8 +21,8 @@
         <button class="btn" id="login">login</button>
         <button class="btn" id="newUser">login</button>
     </nav> --}}
-    </div>
     {{/if}}
+    </header>
    <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
