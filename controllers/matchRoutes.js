@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Match } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -22,5 +22,13 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+const likeBtn = document.getElementById('like');
+const dislikeBtn = document.getElementById('dislike');
+
+if (likeBtn) {
+    likeBtn.addEventListener("click", () => {
+        router.put
+    })
+}
 
 module.exports = router;
