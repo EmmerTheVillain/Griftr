@@ -1,0 +1,21 @@
+/* button{
+    background-color: #c10000;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 15%;
+  } */
+.login-btn {
+    background-color: #c10000;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 15%;
+  }
+  
+  .login-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
