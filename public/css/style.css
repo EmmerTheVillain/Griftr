@@ -42,7 +42,9 @@ img{
   }
   .like-btn:hover{
     cursor: pointer;
-    outline: #c10000;
+    background-color: #d67979;
+    border: solid;
+    border-color: #c10000;
     opacity: 0.6;
   }
   .skip-btn{
@@ -55,6 +57,7 @@ img{
   }
   .skip-btn:hover {
     cursor: pointer;
+    background-color: darkgray;
     outline: #d67979;
     opacity: 0.6;
   }
