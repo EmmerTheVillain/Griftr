@@ -4,6 +4,12 @@ h1,h2,h3{
 img{
     border-radius: 25px;
 }
+
+.row img{
+  width: 20%;
+  margin: auto;
+}
+
 .login-btn {
     background-color: #c10000;
     color: #fff;
