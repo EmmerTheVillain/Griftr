@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/login', async (req, res) => {
   try {
@@ -103,6 +104,35 @@ router.delete('/:id', async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
-  });
+});
+
+//edit user
+router.put('/:id', withAuth, async (req,res) => {
+  try {
+    const userData = await User.update(
+      {
+        first: req.body.first,
+        last: req.body.last,
+        user_type: req.body.user_type,
+        bio: req.body.bio,
+        email: req.body.email,
+        avatar: req.body.avatar,
+        username: req.body.username
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    );
+    if (!userData[0]) {
+      res.status(404).json({ message: 'No user with this id.' });
+      return;
+    }
+    res.json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
   
 module.exports = router;
