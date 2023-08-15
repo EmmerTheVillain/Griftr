@@ -6,7 +6,6 @@ const likeForm = async (event) => {
 
     const reciever_element = document.getElementById('user_id');
     const reciever_id = reciever_element.textContent;
-    console.log(reciever_id);
 
     const response = await fetch('/api/match', {
         method: 'POST',
