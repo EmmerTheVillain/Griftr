@@ -1,3 +1,9 @@
+h1,h2,h3{
+    color: #c10000; 
+}
+img{
+    border-radius: 25px;
+}
 .login-btn {
     background-color: #c10000;
     color: #fff;
@@ -51,4 +57,11 @@
     cursor: pointer;
     outline: #d67979;
     opacity: 0.6;
+  }
+  .name-card{
+    border-color: #c10000;
+    border-style: solid;
+    border-radius: 25px;
+    padding-top: 10px;
+    box-shadow: 2px, 2px #d67979;
   }
