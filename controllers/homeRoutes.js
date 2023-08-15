@@ -2,18 +2,22 @@ const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 // Prevent non-logged-in users from viewing the homepage
 router.get('/', withAuth, async (req, res) => {
   try {
-    const userData = await User.findAll({
+    const count = await User.count();
+    const num = Math.ceil(Math.random()*count);
+
+    const userData = await User.findByPk(num, {
       attributes: { exclude: ['password'] },
       order: [['first', 'ASC'], ['last', 'ASC']],
     });
 
-    const users = userData.map((user) => user.get({ plain: true }));
+    const user = userData.get({ plain: true });
 
     res.render('homepage', {
-      users,
+      user,
       // Pass the logged-in flag to the template
       logged_in: req.session.logged_in,
     });
