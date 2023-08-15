@@ -72,5 +72,12 @@ img{
     border-style: solid;
     border-radius: 25px;
     padding-top: 10px;
+    padding-left: 10px;
     box-shadow: 2px, 2px #d67979;
+  }
+  .main-card img {
+    border-radius: 25px;
+    height: 20rem;
+    object-fit: cover;
+    width: 15rem;
   }
