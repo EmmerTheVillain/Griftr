@@ -16,7 +16,12 @@
    
     {{#if logged_in}}
     <nav class = "col-auto">
-      <button class="btn" id="logout">logout</button>
+      <button class="btn" id="edit-profile">
+        <a href="/edit" style="color:inherit;text-decoration:none">Edit Profile</a>
+      </button>
+    </nav>
+    <nav class = "col-auto">
+      <button class="btn" id="logout">Logout</button>
     </nav>
     </div>
     {{!-- {{#else}}
