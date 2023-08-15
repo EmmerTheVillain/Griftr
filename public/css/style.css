@@ -1,0 +1,67 @@
+h1,h2,h3{
+    color: #c10000; 
+}
+img{
+    border-radius: 25px;
+}
+.login-btn {
+    background-color: #c10000;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 15%;
+  }
+  
+  .login-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  .match-btn{
+    background-color: #c10000;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 100%;
+  }
+  .match-btn:hover {
+    cursor: pointer;
+    outline: #d67979;
+    opacity: 0.6;
+  }
+
+  .like-btn{
+    background-color: #d67979;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 100%;
+  }
+  .like-btn:hover{
+    cursor: pointer;
+    outline: #c10000;
+    opacity: 0.6;
+  }
+  .skip-btn{
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.875rem 1rem;
+    width: 100%; 
+  }
+  .skip-btn:hover {
+    cursor: pointer;
+    outline: #d67979;
+    opacity: 0.6;
+  }
+  .name-card{
+    border-color: #c10000;
+    border-style: solid;
+    border-radius: 25px;
+    padding-top: 10px;
+    box-shadow: 2px, 2px #d67979;
+  }

@@ -1,7 +1,8 @@
+
 <div class="container flex justify-space-between">
   <div class ="row align-items-end">
-    <img src="./public/images/Panda.avif" class="img-fluid col-12" alt="user image">
-    <div class="row">
+    <img src="./public/images/ball.avif" class="img-fluid col-12" alt="user image">
+    <div class="name-card row">
       <h3 class = "col-3">{{user.first}}</h3>
       <p class="col-8">{{user.bio}}</p>
       <p hidden="true" id="user_id">{{user.id}}</p>
@@ -9,17 +10,17 @@
   </div>
 </div>
 
-<div class="row justify-content-between fixed-bottom">
+<div class="row justify-content-between fixed-bottom p-2">
   <div class="col-3">
-    <button type ="button" class="btn btn-primary" type="submit" id="skip">Skip</button>
+    <button type ="button" class="btn btn-primary skip-btn" type="submit" id="skip">Skip</button>
   </div>
    <div class="col-3">
-  <button type="button" class="btn btn-primary"> 
+  <button type="button" class="btn btn-primary match-btn p-2"> 
   <a href="/match" style="color:inherit"> Matches</a>
 </button>
   </div>
   <div class="col-3">
-  <button type="button" class="btn btn-primary" id="like">Like </button>
+  <button type="button" class="btn btn-primary like-btn p-2" id="like">Like </button>
   </div>
 </div>
 

@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Griftr</title>
 </head>
 <body>
   <header class="container display-flex align-space-between">
-    <div class="row jsutify-content-end">
-      <h1 class="col-4">
+    <div class="row justify-content-end">
+      <h1 class="col-auto me-auto" >
         Griftr
       </h1>
    
     {{#if logged_in}}
-    <nav class = "col-4 offset-4">
+    <nav class = "col-auto">
       <button class="btn" id="logout">logout</button>
     </nav>
     </div>
