@@ -1,51 +1,50 @@
 [
     {
-      "sender_id": 1,
-      "receiver_id": 2
+      "sender_id": 1,        // Sender's user ID
+      "receiver_id": 2      // Receiver's user ID
     },
     {
-      "sender_id": 2,
-      "receiver_id": 1
+      "sender_id": 2,        // Sender's user ID
+      "receiver_id": 1      // Receiver's user ID
     },
     {
-      "sender_id": 2,
-      "receiver_id": 3
+      "sender_id": 2,        // Sender's user ID
+      "receiver_id": 3      // Receiver's user ID
     },
     {
-      "sender_id": 3,
-      "receiver_id": 2
+      "sender_id": 3,        // Sender's user ID
+      "receiver_id": 2      // Receiver's user ID
     },
     {
-      "sender_id": 4,
-      "receiver_id": 2
+      "sender_id": 4,        // Sender's user ID
+      "receiver_id": 2      // Receiver's user ID
     },
     {
-      "sender_id": 4,
-      "receiver_id": 8
+      "sender_id": 4,        // Sender's user ID
+      "receiver_id": 8      // Receiver's user ID
     },
     {
-      "sender_id": 5,
-      "receiver_id": 1
+      "sender_id": 5,        // Sender's user ID
+      "receiver_id": 1      // Receiver's user ID
     },
     {
-      "sender_id": 5,
-      "receiver_id": 7
+      "sender_id": 5,        // Sender's user ID
+      "receiver_id": 7      // Receiver's user ID
     },
     {
-      "sender_id": 6,
-      "receiver_id": 7
+      "sender_id": 6,        // Sender's user ID
+      "receiver_id": 7      // Receiver's user ID
     },
     {
-      "sender_id": 7,
-      "receiver_id": 5
+      "sender_id": 7,        // Sender's user ID
+      "receiver_id": 5      // Receiver's user ID
     },
     {
-      "sender_id": 7,
-      "receiver_id": 6
+      "sender_id": 7,        // Sender's user ID
+      "receiver_id": 6      // Receiver's user ID
     },
     {
-      "sender_id": 9,
-      "receiver_id": 2
+      "sender_id": 9,        // Sender's user ID
+      "receiver_id": 2      // Receiver's user ID
     }
-  ]
-  
+]
