@@ -19,7 +19,7 @@ Match.init(
                 key: 'id'
             }
         },
-        reciever_id: {
+        receiver_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',

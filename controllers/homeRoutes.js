@@ -65,4 +65,16 @@ router.get('/edit', withAuth, async (req,res) => {
   }
 });
 
+router.get('/match', withAuth, async (req, res) => {
+  try {
+    res.render('match', {
+      logged_in: req.session.logged_in,
+      user_id: req.session.user_id, // Pass the user ID to the template
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 module.exports = router;
