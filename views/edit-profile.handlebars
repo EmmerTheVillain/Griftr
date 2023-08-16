@@ -15,8 +15,8 @@
             <div>
                 <label for="user-type">User Type</label>
                 <select id="user-type" name="user-type">
-                    <option value="admin" {{#if (isselected user.user_type "admin") }} selected {{/if}}>admin</option>
-                    <option value="regular" {{#if (isselected user.user_type "regular") }} selected {{/if}}>regular</option>
+                    <option value="business_owner" {{#if (isselected user.user_type "business_owner") }} selected {{/if}}>Business Owner</option>
+                    <option value="content_creator" {{#if (isselected user.user_type "content_creator") }} selected {{/if}}>Content Creator</option>
                 </select>
             </div><br>
 
