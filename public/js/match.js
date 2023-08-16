@@ -69,11 +69,15 @@ const fetchMatchesAndRender = async () => {
   
           const userData = matchData.userData;
           const matchContent = `
-            <p>Matched User: ${userData.username}</p>
-            <p>First Name: ${userData.first}</p>
-            <p>Last Name: ${userData.last}</p>
-            <p>Avatar: ${userData.avatar}</p>
-            <p>Bio: ${userData.bio}</p>
+          <div class="row justify-content-center">
+            <div class= "card col-6 p-4">
+              <h3 class = "p-2">${userData.username}</h3>
+              <p class = "p-2">${userData.first} ${userData.last}</p>
+              <img src="${userData.avatar}" class = "p-2" alt="matched user profile picture">
+              <p class = "p-2">Bio: ${userData.bio}</p>
+              
+            </div>
+          </div>
           `;
   
           matchElement.innerHTML = matchContent;
