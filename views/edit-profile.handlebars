@@ -1,58 +1,67 @@
-<section>
-    <h2 class="p-3">Edit Profile</h2>
-    <form class="edit-profile-form">
+<section class="container">
+    <div class="row align-items-center">
+        <h2 class="p-3">Edit Profile</h2>
+        <form class="edit-profile-form">
+            <div>
+                <label for="user-first">First Name</label>
+                <input id="user-first" name="user-first" value="{{user.first}}"></input>
+            </div><br>
+
+            <div>
+                <label for="user-last">Last Name</label>
+                <input id="user-last" name="user-last" value="{{user.last}}"></input>
+            </div><br>
+
+            <div>
+                <label for="user-type">User Type</label>
+                <select id="user-type" name="user-type">
+                    <option value="admin" {{#if (isselected user.user_type "admin") }} selected {{/if}}>admin</option>
+                    <option value="regular" {{#if (isselected user.user_type "regular") }} selected {{/if}}>regular</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="user-bio">Bio</label>
+                <textarea id="user-bio" name="user-bio" rows="4" cols="50">{{user.bio}}</textarea>
+            </div><br>
+
+            <div>
+                <label for="user-email">Email</label>
+                <input id="user-email" name="user-email" value="{{user.email}}"></input>
+            </div><br>
+
+            <div>
+                <label for="user-avatar">Avatar</label>
+                <select id="user-avatar" name="user-avatar">
+                    <option value="dog" {{#if (isselected user.avatar "dog") }} selected {{/if}}>dog</option>
+                    <option value="beanie" {{#if (isselected user.avatar "beanie") }} selected {{/if}}>beanie</option>
+                    <option value="ball" {{#if (isselected user.avatar "ball") }} selected {{/if}}>ball</option>
+                    <option value="Blue-Face-Man" {{#if (isselected user.avatar "Blue-Face-Man") }} selected {{/if}}>blue face guy</option>
+                    <option value="skull" {{#if (isselected user.avatar "skull") }} selected {{/if}}>skull</option>
+                    <option value="dragon" {{#if (isselected user.avatar "dragon") }} selected {{/if}}>dragon</option>
+                    <option value="Pirate" {{#if (isselected user.avatar "Pirate") }} selected {{/if}}>pirate</option>
+                    <option value="Panda" {{#if (isselected user.avatar "Panda") }} selected {{/if}}>panda</option>
+                    <option value="haggard_anime_girl" {{#if (isselected user.avatar "haggard_anime_girl") }} selected {{/if}}>girl</option>
+                    <option value="Monkey" {{#if (isselected user.avatar "Monkey") }} selected {{/if}}>monkey</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="username">Username</label>
+                <input id="username" name="username" value="{{user.username}}"></input>
+            </div><br>
+            <div>
+                <button class= "edit-btn col-3" type="submit">Update Profile</button>
+            </div><br>
+        </form>
+
         <div>
-            <label for="user-first">First Name</label>
-            <input id="user-first" name="user-first" value="{{user.first}}"></input>
-        </div><br>
-        <div>
-            <label for="user-last">Last Name</label>
-            <input id="user-last" name="user-last" value="{{user.last}}"></input>
-        </div><br>
-        <div>
-            <label for="user-type">User Type</label>
-            <select id="user-type" name="user-type">
-                <option value="admin" {{#if (isselected user.user_type "admin") }} selected {{/if}}>admin</option>
-                <option value="regular" {{#if (isselected user.user_type "regular") }} selected {{/if}}>regular</option>
-            </select>
-        </div><br>
-        <div>
-            <label for="user-bio">Bio</label>
-            <textarea id="user-bio" name="user-bio" rows="4" cols="50">{{user.bio}}</textarea>
-        </div><br>
-        <div>
-            <label for="user-email">Email</label>
-            <input id="user-email" name="user-email" value="{{user.email}}"></input>
-        </div><br>
-        <div>
-            <label for="user-avatar">Avatar</label>
-            <select id="user-avatar" name="user-avatar">
-                <option value="dog" {{#if (isselected user.avatar "dog") }} selected {{/if}}>dog</option>
-                <option value="beanie" {{#if (isselected user.avatar "beanie") }} selected {{/if}}>beanie</option>
-                <option value="ball" {{#if (isselected user.avatar "ball") }} selected {{/if}}>ball</option>
-                <option value="Blue-Face-Man" {{#if (isselected user.avatar "Blue-Face-Man") }} selected {{/if}}>blue face guy</option>
-                <option value="skull" {{#if (isselected user.avatar "skull") }} selected {{/if}}>skull</option>
-                <option value="dragon" {{#if (isselected user.avatar "dragon") }} selected {{/if}}>dragon</option>
-                <option value="Pirate" {{#if (isselected user.avatar "Pirate") }} selected {{/if}}>pirate</option>
-                <option value="Panda" {{#if (isselected user.avatar "Panda") }} selected {{/if}}>panda</option>
-                <option value="haggard_anime_girl" {{#if (isselected user.avatar "haggard_anime_girl") }} selected {{/if}}>girl</option>
-                <option value="Monkey" {{#if (isselected user.avatar "Monkey") }} selected {{/if}}>monkey</option>
-            </select>
-        </div><br>
-        <div>
-            <label for="username">Username</label>
-            <input id="username" name="username" value="{{user.username}}"></input>
-        </div><br>
-        <div>
-            <button type="submit">Update Profile</button>
-        </div><br>
-    </form>
-    <div>
-        <button id="back-btn" class="btn">
+            <button id="back-btn" class="btn edit-btn col-3">
             <a href="/">Back to Homepage</a>
-        </button>
+            </button>
+        </div>
+        <p hidden="true" id="user_id">{{user.id}}</p>
     </div>
-    <p hidden="true" id="user_id">{{user.id}}</p>
 </section>
 
 <script src="/js/edit-profile.js"></script>
