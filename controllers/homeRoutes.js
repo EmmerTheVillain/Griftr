@@ -17,14 +17,17 @@ router.get('/', withAuth, async (req, res) => {
 
     // Extract the receiver IDs from sentMatches
     const excludedReceiverIds = sentMatches.map(match => match.receiver_id);
-
-    // Fetch user IDs that are not the current user or in the excluded list
+    const currentUser = await User.findByPk(req.session.user_id);
+    // Fetch user IDs that are not the current user's type or in the excluded list
     const availableUserIds = await User.findAll({
       where: {
         id: {
           [Op.not]: req.session.user_id,
           [Op.notIn]: excludedReceiverIds,
         },
+        user_type:{
+          [Op.ne]: currentUser.user_type,
+        }
       },
       attributes: ['id'], // Fetch only user IDs
     });
