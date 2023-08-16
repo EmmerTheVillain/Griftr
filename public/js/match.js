@@ -69,8 +69,8 @@ const fetchMatchesAndRender = async () => {
   
           const userData = matchData.userData;
           const matchContent = `
-          <div class="row justify-content-center">
-            <div class= "card col-6 p-4">
+          <div class="row justify-content-center p-2">
+            <div class= "card col-lg-6 col-sm-10 p-4">
               <h3 class = "p-2">${userData.username}</h3>
               <p class = "p-2">${userData.first} ${userData.last}</p>
               <img src="${userData.avatar}" class = "p-2" alt="matched user profile picture">
