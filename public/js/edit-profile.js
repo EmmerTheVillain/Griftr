@@ -34,3 +34,13 @@ const editForm = async (event) => {
 document
     .querySelector(".edit-profile-form")
     .addEventListener('submit', editForm);
+
+  
+    document.addEventListener("DOMContentLoaded", function () {
+        const backButton = document.getElementById("back-btn");
+        if (backButton) {
+          backButton.addEventListener("click", function () {
+            window.location.href = "/";
+          });
+        }
+      });
