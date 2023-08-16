@@ -1,17 +1,41 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Match } = require('../models');
 const withAuth = require('../utils/auth');
+const { Op } = require('sequelize');
 
 
 // Prevent non-logged-in users from viewing the homepage
 router.get('/', withAuth, async (req, res) => {
   try {
-    const count = await User.count();
-    const num = Math.ceil(Math.random()*count);
+    // Find all user IDs that the current user has sent match requests to
+    const sentMatches = await Match.findAll({
+      where: {
+        sender_id: req.session.user_id,
+      },
+      attributes: ['receiver_id'],
+    });
 
-    const userData = await User.findByPk(num, {
+    // Extract the receiver IDs from sentMatches
+    const excludedReceiverIds = sentMatches.map(match => match.receiver_id);
+
+    // Fetch user IDs that are not the current user or in the excluded list
+    const availableUserIds = await User.findAll({
+      where: {
+        id: {
+          [Op.not]: req.session.user_id,
+          [Op.notIn]: excludedReceiverIds,
+        },
+      },
+      attributes: ['id'], // Fetch only user IDs
+    });
+
+    // Randomly select a user ID from the availableUserIds list
+    const randomUserIdIndex = Math.floor(Math.random() * availableUserIds.length);
+    const selectedUserId = availableUserIds[randomUserIdIndex].id;
+
+    // Fetch user data using the selected user ID
+    const userData = await User.findByPk(selectedUserId, {
       attributes: { exclude: ['password'] },
-      order: [['first', 'ASC'], ['last', 'ASC']],
     });
 
     const user = userData.get({ plain: true });
