@@ -1,38 +1,51 @@
 [
     {
       "sender_id": 1,
-      "reciever_id": 2
+      "receiver_id": 2
     },
     {
       "sender_id": 2,
-      "reciever_id": 3
+      "receiver_id": 1
+    },
+    {
+      "sender_id": 2,
+      "receiver_id": 3
     },
     {
       "sender_id": 3,
-      "reciever_id": 1
+      "receiver_id": 2
     },
     {
-        "sender_id": 4,
-        "reciever_id": 2
+      "sender_id": 4,
+      "receiver_id": 2
     },
     {
-        "sender_id": 7,
-        "reciever_id": 6
+      "sender_id": 4,
+      "receiver_id": 8
     },
     {
-        "sender_id": 5,
-        "reciever_id": 1
+      "sender_id": 5,
+      "receiver_id": 1
     },
     {
-        "sender_id": 9,
-        "reciever_id": 2
+      "sender_id": 5,
+      "receiver_id": 7
     },
     {
-        "sender_id": 4,
-        "reciever_id": 8
+      "sender_id": 6,
+      "receiver_id": 7
     },
     {
-        "sender_id": 7,
-        "reciever_id": 5
+      "sender_id": 7,
+      "receiver_id": 5
+    },
+    {
+      "sender_id": 7,
+      "receiver_id": 6
+    },
+    {
+      "sender_id": 9,
+      "receiver_id": 2
     }
-]
+  ]
+  

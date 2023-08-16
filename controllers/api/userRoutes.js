@@ -68,7 +68,7 @@ router.post('/create', async (req, res) => {
     }
   });
   
-  // Route to get user info for Matchmaking
+  // Route to get user info for Matched page
 router.get('/:id', async (req, res) => {
     try {
       const user = await User.findByPk(req.params.id, {

@@ -1,18 +1,5 @@
-<h1>Matches</h1>
-
-<div class="row align-center mb-5">
-   <div class="col-md-3">
-    <img src="{{user.avatar}}" alt="user avatar">
-  </div>
-  <div class="col-md-9">
-    <h2>{{user.first}}</h2>
-  </div>
-  <div class="col-md-9">
-    <p>{{user.bio}}</p>
-  </div>
-  <div>
-    <button type="button" class="m-2" id="like">Like</button>
-    <button type="button" class="m-2" id="dislike">Dislike</button>
-  </div>
-</div>
-
+    <h1>Your Matches</h1>
+<div class="match-container" data-user-id="{{user_id}}"></div>
+      <!-- This container will be populated by match.js -->
+    </div>
+    <script src="/js/match.js"></script>

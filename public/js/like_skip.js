@@ -4,12 +4,12 @@ const skipBtn = document.getElementById('skip');
 const likeForm = async (event) => {
     event.preventDefault();
 
-    const reciever_element = document.getElementById('user_id');
-    const reciever_id = reciever_element.textContent;
+    const receiver_element = document.getElementById('user_id');
+    const receiver_id = receiver_element.textContent;
 
     const response = await fetch('/api/match', {
         method: 'POST',
-        body: JSON.stringify({ reciever_id }),
+        body: JSON.stringify({ receiver_id }),
         headers: { 'Content-Type': 'application/json' }
     });
 
