@@ -34,7 +34,7 @@ const likeForm = async (event) => {
             document.location.reload();
         }
     } else {
-        alert('Failed to like. You may have already sent a like to this user.')
+        alert('Failed to like. You may have already sent a like to this user.'); document.location.reload();
     }
 }
 
