@@ -1,103 +1,122 @@
 [
-    {
-      "first": "Bitconnect",
-      "last": "Bitconnect",
-      "user_type": "regular",
-      "bio": "Promising astronomical returns through lending and trading, I'm the master of disappearing acts. I'll inflate hopes and vanish with your funds faster than you can say 'Ponzi.' Invest now for a guaranteed trip to financial ruin. 🚀📉",
-      "email": "bitconnect@example.com",
-      "avatar": "ball",
-      "username": "bitconnect",
-      "password": "ponzischeme123"
-    },
-    {
-      "first": "OneCoin",
-      "last": "OneCoin",
-      "user_type": "admin",
-      "bio": "Embracing innovation, I redefine 'cryptocurrency' with an air of mystery. My legendary founder and I offer education in imaginary blockchain, combining revolutionary nonsense with a dash of jail time. Invest and enjoy the pyramid ascent! 🏆🔼",
-      "email": "onecoin@example.com",
-      "avatar": "beanie",
-      "username": "onecoin",
-      "password": "pyramidscheme456"
-    },
-    {
-      "first": "PlusToken",
-      "last": "PlusToken",
-      "user_type": "regular",
-      "bio": "Master of vanishing acts and eluding authorities, I brought the art of 'exit scam' to new heights. My secret? Encourage millions to trust, invest, and watch as I disappear into thin air, leaving bags full of disappointment. 💨💼",
-      "email": "plustoken@example.com",
-      "avatar": "Blue-Face-Man",
-      "username": "plustoken",
-      "password": "exitguru789"
-    },
-    {
-      "first": "QuadrigaCX",
-      "last": "QuadrigaCX",
-      "user_type": "regular",
-      "bio": "As the 'Canadian Crypto Collapse,' I excelled in mishandling funds and staged the perfect exit strategy. You'll remember me for my creative storylines and vanishing acts. Deposit your trust, and watch it vanish faster than you can say 'audit.' 🍁📉",
-      "email": "quadrigacx@example.com",
-      "avatar": "dog",
-      "username": "quadrigacx",
-      "password": "vanishedfunds123"
-    },
-    {
-      "first": "MMM Global",
-      "last": "MMM Global",
-      "user_type": "regular",
-      "bio": "As the 'Mighty Money Mirage,' I mastered the art of promising heavenly returns. I'm the magician who makes your funds disappear and reappear in my pocket. Join my mystical journey and watch your money vanish in style. ✨🔮",
-      "email": "mmmglobal@example.com",
-      "avatar": "dragon",
-      "username": "mmmglobal",
-      "password": "mirage123"
-    },
-    {
-      "first": "GemCoin",
-      "last": "GemCoin",
-      "user_type": "regular",
-      "bio": "With promises shinier than gemstones, I'm the gem of deception. Invest in my world of fantasy and illusion, where sparkling returns turn into dust. Unearth the true meaning of disappointment with every worthless 'gem' you buy. 💎💸",
-      "email": "gemcoin@example.com",
-      "avatar": "haggard_anime_girl",
-      "username": "gemcoin",
-      "password": "fakegems456"
-    },
-    {
-      "first": "Prodeum",
-      "last": "Prodeum",
-      "user_type": "regular",
-      "bio": "A grand production of emptiness, I'm the champion of disappearing acts. I had a vision: to spell out 'penis' and vanish, leaving nothing but laughs and lessons in gullibility. Join my brief, yet unforgettable, crypto journey. 🍆💨",
-      "email": "prodeum@example.com",
-      "avatar": "Monkey",
-      "username": "prodeum",
-      "password": "vanishedvision789"
-    },
-    {
-      "first": "LoopX",
-      "last": "LoopX",
-      "user_type": "admin",
-      "bio": "Master of looping and deceiving, I hypnotized investors with promises of automated trading. Like a broken record, I played the same tune: invest and watch your funds loop away into thin air. Join the loop and lose. 🔄📉",
-      "email": "loopx@example.com",
-      "avatar": "Panda",
-      "username": "loopx",
-      "password": "hypnoticloop890"
-    },
-    {
-      "first": "Benebit",
-      "last": "Benebit",
-      "user_type": "regular",
-      "bio": "I promised the moon and stars in a sky of deception. My genius move? Disappearing after a grand ICO spectacle. Join the 'Benebit Boom' and witness a disappearing act so astonishing, it left investors applauding for more. 🌙👏",
-      "email": "benebit@example.com",
-      "avatar": "Pirate",
-      "username": "benebit",
-      "password": "vanishedico12345"
-    },
-    {
-      "first": "Centra Tech",
-      "last": "Centra Tech",
-      "user_type": "regular",
-      "bio": "Presenting the 'Centra Circus,' where we juggled promises of crypto fame with fancy debit cards. Our greatest trick? Vanishing with funds and leaving a trail of legal troubles. Invest in the illusion and watch your dreams vanish. 🎪🃏",
-      "email": "centratech@example.com",
-      "avatar": "skull",
-      "username": "centratech",
-      "password": "illusionists567"
-    }
-
+  {
+    "first": "Tech",
+    "last": "Guru",
+    "user_type": "content_creator",
+    "bio": "I'm the Tech Guru, specializing in the latest gadgets, tech reviews, and gaming tips. Join me on a journey through the digital world!",
+    "email": "tech@example.com",
+    "avatar": "Pirate.avif",
+    "username": "TechGuru",
+    "password": "password1"
+  },
+  {
+    "first": "Travel",
+    "last": "Explorer",
+    "user_type": "content_creator",
+    "bio": "Globe-trotter and travel enthusiast. From hidden gems to iconic landmarks, let's explore the world one destination at a time.",
+    "email": "travel@example.com",
+    "avatar": "skull.avif",
+    "username": "TravelExplorer",
+    "password": "password2"
+  },
+  {
+    "first": "Fitness",
+    "last": "Freak",
+    "user_type": "content_creator",
+    "bio": "Fitness is my life! Join me on a fitness journey to transform your body, improve your health, and embrace an active lifestyle.",
+    "email": "fitness@example.com",
+    "avatar": "dragon.avif",
+    "username": "FitnessFreak",
+    "password": "password3"
+  },
+  {
+    "first": "Fashion",
+    "last": "Lover",
+    "user_type": "content_creator",
+    "bio": "Fashion lover and style icon. Unleash your inner fashionista and stay updated with the latest trends, tips, and outfit inspiration.",
+    "email": "fashion@example.com",
+    "avatar": "dog.avif",
+    "username": "Fashionista",
+    "password": "password4"
+  },
+  {
+    "first": "Cooking",
+    "last": "Maestro",
+    "user_type": "content_creator",
+    "bio": "Culinary wizard sharing delicious recipes, kitchen hacks, and culinary adventures. Let's turn your kitchen into a gourmet haven!",
+    "email": "cooking@example.com",
+    "avatar": "Monkey.avif",
+    "username": "CookingMaestro",
+    "password": "password5"
+  },
+  {
+    "first": "Artistic",
+    "last": "Soul",
+    "user_type": "content_creator",
+    "bio": "Creative mind, artist, and storyteller. Explore the world of art, crafts, and imagination as we bring captivating stories to life.",
+    "email": "artistic@example.com",
+    "avatar": "Smiley-Face.avif",
+    "username": "ArtisticSoul",
+    "password": "password6"
+  },
+  {
+    "first": "Eco",
+    "last": "Innovator",
+    "user_type": "business_owner",
+    "bio": "Founder of an eco-friendly lifestyle brand. Discover sustainable products that promote a greener world, one purchase at a time.",
+    "email": "eco@example.com",
+    "avatar": "beanie.avif",
+    "username": "EcoInnovator",
+    "password": "password7"
+  },
+  {
+    "first": "Tech",
+    "last": "Trailblazer",
+    "user_type": "business_owner",
+    "bio": "Tech visionary on a mission to simplify your digital life. Explore cutting-edge gadgets and solutions designed to elevate your tech experience.",
+    "email": "tech2@example.com",
+    "avatar": "Blue-Face-Man.avif",
+    "username": "TechTrailblazer",
+    "password": "password8"
+  },
+  {
+    "first": "Pet",
+    "last": "Whisperer",
+    "user_type": "business_owner",
+    "bio": "Animal enthusiast and pet wellness expert. Uncover holistic solutions for your furry friends' health, happiness, and well-being.",
+    "email": "pet@example.com",
+    "avatar": "dog.avif",
+    "username": "PetWhisperer",
+    "password": "password9"
+  },
+  {
+    "first": "Gourmet",
+    "last": "Genius",
+    "user_type": "business_owner",
+    "bio": "Foodpreneur and gastronomy magician. Embark on a culinary adventure with gourmet ingredients and delectable flavors that redefine taste.",
+    "email": "gourmet@example.com",
+    "avatar": "Panda.avif",
+    "username": "GourmetGenius",
+    "password": "password10"
+  },
+  {
+    "first": "Wellness",
+    "last": "Innovator",
+    "user_type": "business_owner",
+    "bio": "Wellness advocate transforming self-care. Discover holistic practices, products, and rituals that nourish mind, body, and soul.",
+    "email": "wellness@example.com",
+    "avatar": "Waves.avif",
+    "username": "WellnessInnovator",
+    "password": "password11"
+  },
+  {
+    "first": "Design",
+    "last": "Dynamo",
+    "user_type": "business_owner",
+    "bio": "Design maverick creating spaces that inspire. Unlock the secrets of interior design and décor to craft a home that reflects your style.",
+    "email": "design@example.com",
+    "avatar": "haggard_anime_girl.avif",
+    "username": "DesignDynamo",
+    "password": "password12"
+  }
 ]

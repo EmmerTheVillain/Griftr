@@ -26,3 +26,13 @@ const skipForm = () => {
 
 likeBtn.addEventListener("click", likeForm);
 skipBtn.addEventListener("click", skipForm);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const matchButton = document.getElementById("match-button");
+    if (matchButton) {
+      matchButton.addEventListener("click", function () {
+        window.location.href = "/match";
+      });
+    }
+  });

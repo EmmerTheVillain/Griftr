@@ -23,3 +23,11 @@ const loginFormHandler = async (event) => {
     .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);
   
+    document.addEventListener("DOMContentLoaded", function () {
+      const newUserButton = document.getElementById("new-user-btn");
+      if (newUserButton) {
+        newUserButton.addEventListener("click", function () {
+          window.location.href = "/newUser";
+        });
+      }
+    });
