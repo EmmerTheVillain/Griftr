@@ -47,9 +47,14 @@ const fetchMatchesAndRender = async () => {
       const userId = matchContainer.getAttribute('data-user-id');
   
       const matchedUserIds = await fetchConfirmedMatches(userId);
+
+      const currentUserId = parseInt(userId); // Convert user ID to integer
+  
+      // Filter out the current user's ID from the matchedUserIds array
+      const filteredMatchedUserIds = matchedUserIds.filter(id => parseInt(id) !== currentUserId);
   
       const matchesWithUserInfo = await Promise.all(
-        matchedUserIds.map(async matchedUserId => {
+        filteredMatchedUserIds.map(async matchedUserId => {
           const userData = await fetchUserInfo(matchedUserId);
           if (userData) {
             return {
@@ -73,7 +78,7 @@ const fetchMatchesAndRender = async () => {
             <div class= "card col-lg-6 col-sm-10 p-4">
               <h3 class = "p-2">${userData.username}</h3>
               <p class = "p-2">${userData.first} ${userData.last}</p>
-              <img src="/images/${userData.avatar}.avif" class = "main-card img-responsive mw-75 p-2" alt="matched user profile picture">
+              <img src="/images/${userData.avatar}" class = "main-card img-responsive mw-75 p-2" alt="matched user profile picture">
               <p class = "p-2">Bio: ${userData.bio}</p>
               
             </div>

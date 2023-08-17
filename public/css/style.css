@@ -1,97 +1,120 @@
-h1,h2,h3{
-    color: #c10000; 
-}
-img{
-    border-radius: 25px;
+/* Style definitions for heading elements h1, h2, and h3 */
+h1, h2, h3 {
+    color: #c10000; /* Set text color to a deep red */
 }
 
-.row img{
-  width: 20%;
-  margin: auto;
+/* Style definition for images */
+img {
+    border-radius: 25px; /* Apply rounded corners to images */
 }
 
+/* Style definition for images inside elements with class "row" */
+.row img {
+    width: 20%; /* Set image width to 20% of its container */
+    margin: auto; /* Center align images horizontally */
+}
+
+/* Style definition for login button */
 .login-btn {
-  background-color: #c10000;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.875rem 1rem;
-  width: 25%;
+    background-color: #c10000; /* Set background color to deep red */
+    color: #fff; /* Set text color to white */
+    font-size: 1rem; /* Set font size to 1rem */
+    outline: none; /* Remove outline on button focus */
+    padding: 0.875rem 1rem; /* Set padding around the button */
+    width: 25%; /* Set button width to 25% of its container */
 }
-  
+
+/* Style definition for login button on hover */
 .login-btn:hover {
-  cursor: pointer;
-  opacity: 0.6;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    opacity: 0.6; /* Reduce opacity to 60% on hover */
 }
 
-.match-btn{
-  background-color: #c10000;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.875rem 1rem;
-  width: 100%;
+/* Style definition for match button */
+.match-btn {
+    background-color: #c10000; /* Set background color to deep red */
+    color: #fff; /* Set text color to white */
+    font-size: 1rem; /* Set font size to 1rem */
+    outline: none; /* Remove outline on button focus */
+    padding: 0.875rem 1rem; /* Set padding around the button */
+    width: 100%; /* Set button width to 100% of its container */
 }
 
+/* Style definition for match button on hover */
 .match-btn:hover {
-  cursor: pointer;
-  outline: #d67979;
-  opacity: 0.6;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: #d67979; /* Set outline color on hover */
+    opacity: 0.6; /* Reduce opacity to 60% on hover */
 }
 
-.like-btn{
-  background-color: #d67979;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.875rem 1rem;
-  width: 100%;
+/* Style definition for like button */
+.like-btn {
+    background-color: #d67979; /* Set background color to a shade of red */
+    color: #fff; /* Set text color to white */
+    font-size: 1rem; /* Set font size to 1rem */
+    outline: none; /* Remove outline on button focus */
+    padding: 0.875rem 1rem; /* Set padding around the button */
+    width: 100%; /* Set button width to 100% of its container */
 }
-.like-btn:hover{
-  cursor: pointer;
-  background-color: #d67979;
-  border: solid;
-  border-color: #c10000;
-  opacity: 0.6;
+
+/* Style definition for like button on hover */
+.like-btn:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #d67979; /* Maintain background color on hover */
+    border: solid; /* Add a solid border on hover */
+    border-color: #c10000; /* Set border color on hover */
+    opacity: 0.6; /* Reduce opacity to 60% on hover */
 }
-.skip-btn{
-  background-color: black;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.875rem 1rem;
-  width: 100%; 
+
+/* Style definition for skip button */
+.skip-btn {
+    background-color: black; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    font-size: 1rem; /* Set font size to 1rem */
+    outline: none; /* Remove outline on button focus */
+    padding: 0.875rem 1rem; /* Set padding around the button */
+    width: 100%; /* Set button width to 100% of its container */
 }
+
+/* Style definition for skip button on hover */
 .skip-btn:hover {
-  cursor: pointer;
-  background-color: darkgray;
-  outline: #d67979;
-  opacity: 0.6;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: darkgray; /* Change background color on hover */
+    outline: #d67979; /* Set outline color on hover */
+    opacity: 0.6; /* Reduce opacity to 60% on hover */
 }
-.name-card{
-  border-color: #c10000;
-  border-style: solid;
-  border-radius: 25px;
-  padding-top: 10px;
-  padding-left: 10px;
-  box-shadow: 2px, 2px #d67979;
+
+/* Style definition for card with class "name-card" */
+.name-card {
+    border-color: #c10000; /* Set border color to deep red */
+    border-style: solid; /* Set border style to solid */
+    border-radius: 25px; /* Apply rounded corners to the card */
+    padding-top: 10px; /* Set padding on top of the card */
+    padding-left: 10px; /* Set padding on the left side of the card */
+    box-shadow: 2px, 2px #d67979; /* Add a subtle box shadow */
 }
+
+/* Style definition for images inside elements with class "main-card" */
 .main-card img {
-  border-radius: 25px;
-  height: 20rem;
-  object-fit: cover;
-  width: 15rem;
+    border-radius: 25px; /* Apply rounded corners to images */
+    height: 20rem; /* Set image height to 20rem */
+    object-fit: cover; /* Scale and crop images to fit container */
+    width: 15rem; /* Set image width to 15rem */
 }
-.edit-btn{
-  background-color: #c10000;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.875rem 1rem;
-  width: 25%;
+
+/* Style definition for edit button */
+.edit-btn {
+    background-color: #c10000; /* Set background color to deep red */
+    color: #fff; /* Set text color to white */
+    font-size: 1rem; /* Set font size to 1rem */
+    outline: none; /* Remove outline on button focus */
+    padding: 0.875rem 1rem; /* Set padding around the button */
+    width: 25%; /* Set button width to 25% of its container */
 }
+
+/* Style definition for edit button on hover */
 .edit-btn:hover {
-  cursor: pointer;
-  outline: #d67979;
-  opacity: 0.6;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: #d67979; /* Set outline color on hover */
+    opacity: 0.6; /* Reduce opacity to 60% on hover */
 }

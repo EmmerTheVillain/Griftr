@@ -1,7 +1,7 @@
 
 <div class="container flex justify-space-between main-card">
   <div class ="row justify-content-center align-items-end">
-    <img src="/images/{{user.avatar}}.avif" class="img-responsive mw-75" style="width: 100%; min-height: 50%" alt="user image">
+    <img src="/images/{{user.avatar}}" class="img-responsive mw-75" style="width: 100%; min-height: 50%" alt="user image">
     <div class="name-card row">
       <h3 class = "col-3">{{user.first}}</h3>
       <p class="col-8">{{user.bio}}</p>
@@ -15,8 +15,8 @@
     <button type ="button" class="btn btn-primary skip-btn" id="skip">Skip</button>
   </div>
    <div class="col-4">
-  <button type="button" class="btn btn-primary match-btn p-2"> 
-  <a href="/match" style="color:inherit"> Matches</a>
+  <button type="button" class="btn btn-primary match-btn p-2" id="match-button">
+   Matches
 </button>
   </div>
   <div class="col-4">
@@ -24,4 +24,4 @@
   </div>
 </div>
 
-<script src="/js/like_skip.js"></script>
+<script src="/js/homepage.js"></script>

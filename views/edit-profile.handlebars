@@ -15,8 +15,8 @@
             <div>
                 <label for="user-type">User Type</label>
                 <select id="user-type" name="user-type">
-                    <option value="admin" {{#if (isselected user.user_type "admin") }} selected {{/if}}>admin</option>
-                    <option value="regular" {{#if (isselected user.user_type "regular") }} selected {{/if}}>regular</option>
+                    <option value="business_owner" {{#if (isselected user.user_type "business_owner") }} selected {{/if}}>Business Owner</option>
+                    <option value="content_creator" {{#if (isselected user.user_type "content_creator") }} selected {{/if}}>Content Creator</option>
                 </select>
             </div><br>
 
@@ -30,20 +30,9 @@
                 <input id="user-email" name="user-email" value="{{user.email}}"></input>
             </div><br>
 
-            <div>
-                <label for="user-avatar">Avatar</label>
-                <select id="user-avatar" name="user-avatar">
-                    <option value="dog" {{#if (isselected user.avatar "dog") }} selected {{/if}}>dog</option>
-                    <option value="beanie" {{#if (isselected user.avatar "beanie") }} selected {{/if}}>beanie</option>
-                    <option value="ball" {{#if (isselected user.avatar "ball") }} selected {{/if}}>ball</option>
-                    <option value="Blue-Face-Man" {{#if (isselected user.avatar "Blue-Face-Man") }} selected {{/if}}>blue face guy</option>
-                    <option value="skull" {{#if (isselected user.avatar "skull") }} selected {{/if}}>skull</option>
-                    <option value="dragon" {{#if (isselected user.avatar "dragon") }} selected {{/if}}>dragon</option>
-                    <option value="Pirate" {{#if (isselected user.avatar "Pirate") }} selected {{/if}}>pirate</option>
-                    <option value="Panda" {{#if (isselected user.avatar "Panda") }} selected {{/if}}>panda</option>
-                    <option value="haggard_anime_girl" {{#if (isselected user.avatar "haggard_anime_girl") }} selected {{/if}}>girl</option>
-                    <option value="Monkey" {{#if (isselected user.avatar "Monkey") }} selected {{/if}}>monkey</option>
-                </select>
+     <div class="form-group">
+                <label for="avatar-file">Avatar</label>
+                <input type="file" class="form-input" id="avatar-file" accept="image/*" />
             </div><br>
 
             <div>
@@ -57,7 +46,7 @@
 
         <div>
             <button id="back-btn" class="btn edit-btn col-3">
-            <a href="/">Back to Homepage</a>
+            Back to Homepage
             </button>
         </div>
         <p hidden="true" id="user_id">{{user.id}}</p>
