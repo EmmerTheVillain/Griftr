@@ -1,47 +1,45 @@
-const createUser = async (event) => {
-  event.preventDefault();
+const createUser = async () => {
+  const email = document.querySelector('#email-newUser').value;
+  const password = document.querySelector('#password-newUser').value;
+  const first = document.querySelector('#firstName-newUser').value;
+  const last = document.querySelector('#lastName-newUser').value;
+  const username = document.querySelector('#username-newUser').value;
+  const bio = document.querySelector('#user-bio').value;
+  const user_type = document.querySelector('#user-type').value;
 
-  const email = document.querySelector('#email-newUser').value.trim();
-  const password = document.querySelector('#password-newUser').value.trim();
-  const confirmPassword = document.querySelector('#password-confirm').value.trim();
-  const first = document.querySelector('#firstName-newUser').value.trim();
-  const last = document.querySelector('#lastName-newUser').value.trim();
-  const username = document.querySelector('#username-newUser').value.trim();
-  const bio = document.querySelector('#user-bio').value
-  const user_type = document.querySelector('#user-type').value; // User Type selection
-  const avatar = document.querySelector('#user-avatar').value; // Avatar selection
+  const avatarFileInput = document.querySelector('#avatar-file');
+  const avatarFile = avatarFileInput.files[0];
 
-  // Check if passwords match
-  if (password !== confirmPassword) {
-    alert('Passwords do not match');
-    return;
-  }
+  if (email && password && first && last && username && bio && avatarFile) {
+    const formData = new FormData();
 
-  if (email && password && first && last && username) {
-    const response = await fetch('/api/users/create', {
-      method: 'POST',
-      body: JSON.stringify({
-        username,
-        email,
-        password,
-        first,
-        last,
-        user_type,
-        bio,
-        avatar,
+    formData.append('avatar', avatarFile);
+    formData.append('email', email);
+    formData.append('password', password);
+    formData.append('first', first);
+    formData.append('last', last);
+    formData.append('username', username);
+    formData.append('user_type', user_type);
+    formData.append('bio', bio);
 
-      }),
-      headers: { 'Content-Type': 'application/json' },
-    });
+    try {
+      const response = await fetch('/api/users/create', {
+        method: 'POST',
+        body: formData,
+      });
 
-    if (response.ok) {
-      document.location.replace('/'); // Redirect to homepage after creating user
-    } else {
-      alert('Failed to create user');
+      if (response.ok) {
+        document.location.replace('/');
+      } else {
+        alert('Failed to create user');
+      }
+    } catch (error) {
+      console.error('Error creating user:', error);
     }
   }
 };
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', createUser);
+document.querySelector('.login-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  createUser();
+});

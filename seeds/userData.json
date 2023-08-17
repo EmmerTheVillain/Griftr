@@ -5,7 +5,7 @@
     "user_type": "content_creator",
     "bio": "I'm the Tech Guru, specializing in the latest gadgets, tech reviews, and gaming tips. Join me on a journey through the digital world!",
     "email": "tech@example.com",
-    "avatar": "Pirate",
+    "avatar": "Pirate.avif",
     "username": "TechGuru",
     "password": "password1"
   },
@@ -15,7 +15,7 @@
     "user_type": "content_creator",
     "bio": "Globe-trotter and travel enthusiast. From hidden gems to iconic landmarks, let's explore the world one destination at a time.",
     "email": "travel@example.com",
-    "avatar": "skull",
+    "avatar": "skull.avif",
     "username": "TravelExplorer",
     "password": "password2"
   },
@@ -25,7 +25,7 @@
     "user_type": "content_creator",
     "bio": "Fitness is my life! Join me on a fitness journey to transform your body, improve your health, and embrace an active lifestyle.",
     "email": "fitness@example.com",
-    "avatar": "dragon",
+    "avatar": "dragon.avif",
     "username": "FitnessFreak",
     "password": "password3"
   },
@@ -35,7 +35,7 @@
     "user_type": "content_creator",
     "bio": "Fashion lover and style icon. Unleash your inner fashionista and stay updated with the latest trends, tips, and outfit inspiration.",
     "email": "fashion@example.com",
-    "avatar": "dog",
+    "avatar": "dog.avif",
     "username": "Fashionista",
     "password": "password4"
   },
@@ -45,7 +45,7 @@
     "user_type": "content_creator",
     "bio": "Culinary wizard sharing delicious recipes, kitchen hacks, and culinary adventures. Let's turn your kitchen into a gourmet haven!",
     "email": "cooking@example.com",
-    "avatar": "Monkey",
+    "avatar": "Monkey.avif",
     "username": "CookingMaestro",
     "password": "password5"
   },
@@ -55,7 +55,7 @@
     "user_type": "content_creator",
     "bio": "Creative mind, artist, and storyteller. Explore the world of art, crafts, and imagination as we bring captivating stories to life.",
     "email": "artistic@example.com",
-    "avatar": "Smiley-Face",
+    "avatar": "Smiley-Face.avif",
     "username": "ArtisticSoul",
     "password": "password6"
   },
@@ -65,7 +65,7 @@
     "user_type": "business_owner",
     "bio": "Founder of an eco-friendly lifestyle brand. Discover sustainable products that promote a greener world, one purchase at a time.",
     "email": "eco@example.com",
-    "avatar": "beanie",
+    "avatar": "beanie.avif",
     "username": "EcoInnovator",
     "password": "password7"
   },
@@ -75,7 +75,7 @@
     "user_type": "business_owner",
     "bio": "Tech visionary on a mission to simplify your digital life. Explore cutting-edge gadgets and solutions designed to elevate your tech experience.",
     "email": "tech2@example.com",
-    "avatar": "Blue-Face-Man",
+    "avatar": "Blue-Face-Man.avif",
     "username": "TechTrailblazer",
     "password": "password8"
   },
@@ -85,7 +85,7 @@
     "user_type": "business_owner",
     "bio": "Animal enthusiast and pet wellness expert. Uncover holistic solutions for your furry friends' health, happiness, and well-being.",
     "email": "pet@example.com",
-    "avatar": "dog",
+    "avatar": "dog.avif",
     "username": "PetWhisperer",
     "password": "password9"
   },
@@ -95,7 +95,7 @@
     "user_type": "business_owner",
     "bio": "Foodpreneur and gastronomy magician. Embark on a culinary adventure with gourmet ingredients and delectable flavors that redefine taste.",
     "email": "gourmet@example.com",
-    "avatar": "Panda",
+    "avatar": "Panda.avif",
     "username": "GourmetGenius",
     "password": "password10"
   },
@@ -105,7 +105,7 @@
     "user_type": "business_owner",
     "bio": "Wellness advocate transforming self-care. Discover holistic practices, products, and rituals that nourish mind, body, and soul.",
     "email": "wellness@example.com",
-    "avatar": "Waves",
+    "avatar": "Waves.avif",
     "username": "WellnessInnovator",
     "password": "password11"
   },
@@ -115,7 +115,7 @@
     "user_type": "business_owner",
     "bio": "Design maverick creating spaces that inspire. Unlock the secrets of interior design and décor to craft a home that reflects your style.",
     "email": "design@example.com",
-    "avatar": "haggard_anime_girl",
+    "avatar": "haggard_anime_girl.avif",
     "username": "DesignDynamo",
     "password": "password12"
   }

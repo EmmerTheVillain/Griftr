@@ -1,6 +1,21 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
+const multer = require('multer');
+const path = require('path');
+
+// avatar upload
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'public/images'); // Specify the destination folder
+  },
+  filename: (req, file, cb) => {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    cb(null, uniqueSuffix + path.extname(file.originalname)); // Use unique filenames
+  },
+});
+const upload = multer({ storage: storage });
+
 
 router.post('/login', async (req, res) => {
   try {
@@ -49,8 +64,9 @@ router.post('/logout', (req, res) => {
 });
 
 // Route to create a new user
-router.post('/create', async (req, res) => {
+router.post('/create', upload.single('avatar'), async (req, res) => {
     try {
+      const avatarPath = req.file.filename.replace('public/images/', '');
       const newUser = await User.create({
         username: req.body.username,
         email: req.body.email,
@@ -59,7 +75,7 @@ router.post('/create', async (req, res) => {
         last: req.body.last,
         user_type: req.body.user_type,
         bio: req.body.bio,
-        avatar: req.body.avatar
+        avatar: avatarPath,
       });
   
       res.status(201).json(newUser);
