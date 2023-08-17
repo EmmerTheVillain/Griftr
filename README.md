@@ -31,6 +31,7 @@ Griftr leverages a variety of technologies to create a robust and engaging exper
 - **Handlebars.js**: A templating engine used to create dynamic and reusable HTML templates.
 - **MySQL**: A popular relational database management system used to store and manage user data.
 - **Sequelize**: An Object-Relational Mapping (ORM) library that simplifies database interactions and management.
+- **Multer**: A popular middleware for handling image uploads in Express.
 - **Heroku**: A cloud platform that enables easy deployment and hosting of web applications.
 
 ## Getting Started
