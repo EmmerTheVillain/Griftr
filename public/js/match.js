@@ -73,7 +73,7 @@ const fetchMatchesAndRender = async () => {
             <div class= "card col-lg-6 col-sm-10 p-4">
               <h3 class = "p-2">${userData.username}</h3>
               <p class = "p-2">${userData.first} ${userData.last}</p>
-              <img src="/images/${userData.avatar}.avif" class = "main-card img-responsive mw-75 p-2" alt="matched user profile picture">
+              <img src="/images/${userData.avatar}" class = "main-card img-responsive mw-75 p-2" alt="matched user profile picture">
               <p class = "p-2">Bio: ${userData.bio}</p>
               
             </div>
