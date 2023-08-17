@@ -123,31 +123,36 @@ router.delete('/:id', async (req, res) => {
 });
 
 //edit user
-router.put('/:id', withAuth, async (req,res) => {
+router.put('/:id', withAuth, upload.single('avatar'), async (req, res) => {
   try {
-    const userData = await User.update(
-      {
-        first: req.body.first,
-        last: req.body.last,
-        user_type: req.body.user_type,
-        bio: req.body.bio,
-        email: req.body.email,
-        avatar: req.body.avatar,
-        username: req.body.username
-      },
-      {
-        where: {
-          id: req.params.id
-        }
+      const avatarPath = req.file ? req.file.filename.replace('public/images/', '') : null;
+      const userData = {
+          first: req.body.first,
+          last: req.body.last,
+          user_type: req.body.user_type,
+          bio: req.body.bio,
+          email: req.body.email,
+          username: req.body.username
+      };
+
+      if (avatarPath) {
+          userData.avatar = avatarPath;
       }
-    );
-    if (!userData[0]) {
-      res.status(404).json({ message: 'No user with this id.' });
-      return;
-    }
-    res.json(userData);
+
+      const updatedUser = await User.update(userData, {
+          where: {
+              id: req.params.id
+          }
+      });
+
+      if (updatedUser[0] === 0) {
+          res.status(404).json({ message: 'No user with this id.' });
+          return;
+      }
+
+      res.json(updatedUser);
   } catch (err) {
-    res.status(500).json(err);
+      res.status(500).json(err);
   }
 });
   
