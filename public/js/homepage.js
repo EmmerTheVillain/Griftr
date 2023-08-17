@@ -18,6 +18,7 @@ const likeForm = async (event) => {
     } else {
         alert('Failed to like. You may have already sent a like to this user.')
     }
+    document.location.reload();
 }
 
 const skipForm = () => {
