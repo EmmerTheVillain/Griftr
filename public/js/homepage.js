@@ -24,18 +24,12 @@ const likeForm = async (event) => {
             const { matchedUserIds } = await response.json();
             for (let i in matchedUserIds) {
                 if (i === receiver_id) {
-                    alert("Congratulations my friend, you have a match.");
-                    document.location.reload();
-                } else {
-                    document.location.reload();
-                }
-            }
-        } else {
-            document.location.reload();
-        }
-    } else {
-        alert('Failed to like. You may have already sent a like to this user.'); document.location.reload();
+                    alert("Congratulations my friend, you have a match.");                    
+                }}
+            } } else {
+        alert('Failed to like. You may have already sent a like to this user.'); 
     }
+    document.location.reload();
 }
 
 const skipForm = () => {
