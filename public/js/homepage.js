@@ -14,9 +14,27 @@ const likeForm = async (event) => {
     });
 
     if (response.ok) {
-        document.location.reload();
+        const response = await fetch(`/api/match/${receiver_id}`,{
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+              },
+        });
+        if (response.ok) {
+            const { matchedUserIds } = await response.json();
+            for (let i in matchedUserIds) {
+                if (i === receiver_id) {
+                    alert("Congratulations my friend, you have a match.");
+                    document.location.reload();
+                } else {
+                    document.location.reload();
+                }
+            }
+        } else {
+            document.location.reload();
+        }
     } else {
-        alert('Failed to create post.')
+        alert('Failed to like. You may have already sent a like to this user.')
     }
 }
 
@@ -25,6 +43,8 @@ const skipForm = () => {
 }
 
 likeBtn.addEventListener("click", likeForm);
+
+
 skipBtn.addEventListener("click", skipForm);
 
 
@@ -36,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+

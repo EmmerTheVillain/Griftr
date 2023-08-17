@@ -10,6 +10,7 @@ const homeRoutes = require('./homeRoutes');
 // Use the home routes for the root path ("/")
 router.use('/', homeRoutes);
 
+
 // Use the API routes for paths starting with "/api"
 router.use('/api', apiRoutes);
 
