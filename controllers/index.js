@@ -8,6 +8,6 @@ router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 // router.use('/match', matchRoutes);
 
-app.use("/images", express.static(path.join(__dirname, "/public/images")));
+// app.use("/images", express.static(path.join(__dirname, "/public/images")));
 
 module.exports = router;
