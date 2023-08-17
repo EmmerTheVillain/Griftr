@@ -7,7 +7,6 @@ router.get('/:id', async (req, res) => {
   try {
     const userId = req.params.id;
 
-    // Fetch confirmed match IDs related to the provided user ID
     const confirmedMatches = await Match.findAll({
       where: {
         [Op.or]: [
@@ -16,22 +15,24 @@ router.get('/:id', async (req, res) => {
         ],
       },
     });
-    console.log('confirmedMatches:', confirmedMatches)
-    const confirmedMatchIds = confirmedMatches.map(match => {
-      return match.sender_id === userId ? match.receiver_id : match.sender_id;
-    });
-    console.log('Ids:', confirmedMatchIds);
-    
-// Convert userId to an integer
-const userIdAsInt = parseInt(userId);
 
-// Filter out userId from confirmedMatchIds
-const filteredConfirmedMatchIds = confirmedMatchIds.filter(id => parseInt(id) !== userIdAsInt);
+    const matchedUserIds = confirmedMatches
+      .filter(match => {
+        return confirmedMatches.some(otherMatch => (
+          otherMatch.sender_id === match.receiver_id && 
+          otherMatch.receiver_id === match.sender_id
+        ));
+      })
+      .map(match => {
+        return match.sender_id === userId ? match.receiver_id : match.sender_id;
+      });
 
-res.json({ matchedUserIds: filteredConfirmedMatchIds }); // Send JSON response
-} catch (err) {
-res.status(500).json(err);
-}
+    const uniqueMatchedUserIds = [...new Set(matchedUserIds)];
+
+    res.json({ matchedUserIds: uniqueMatchedUserIds });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // routing for liking/requesting match

@@ -47,9 +47,14 @@ const fetchMatchesAndRender = async () => {
       const userId = matchContainer.getAttribute('data-user-id');
   
       const matchedUserIds = await fetchConfirmedMatches(userId);
+
+      const currentUserId = parseInt(userId); // Convert user ID to integer
+  
+      // Filter out the current user's ID from the matchedUserIds array
+      const filteredMatchedUserIds = matchedUserIds.filter(id => parseInt(id) !== currentUserId);
   
       const matchesWithUserInfo = await Promise.all(
-        matchedUserIds.map(async matchedUserId => {
+        filteredMatchedUserIds.map(async matchedUserId => {
           const userData = await fetchUserInfo(matchedUserId);
           if (userData) {
             return {
